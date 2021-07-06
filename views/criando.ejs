@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--incluindo o cabeçalho-->
+<%- include('head'); %>
+
+
+    <body class="container">
+        <!--incluindo o menu-->
+        <%- include('header'); %>
+            <main>
+                <div class="jumbotron">
+                    <!--título da página-->
+                    <h1>Criando Viagem</h1><br>
+
+                    <!--criando o formulário-->
+
+
+                    <form action="buscando" method="get">
+                        <h4>Cidade para onde vai:</h4>
+                        <input type="text" name="cidade_destino" size="40" placeholder="Cidade destino" /><br><br>
+
+                        <h4>Data da estadia:</h4>
+                        <input type="date" name="data_ida" size="40" />
+                        a
+                        <input type="date" name="data_volta" size="40" /><br><br>
+
+                        <h4>Produtos disponíveis para venda:</h4>
+                        <input type="text" name="produtos" size="40" placeholder="Produtos disponíveis" /><br><br>
+
+                        <input type="submit" value="Enviar"><br><br>
+                    </form>
+                </div>
+            </main>
+
+            <!--incluindo o rodapé-->
+            <%- include('footer'); %>
+    </body>
+
+    </html>
